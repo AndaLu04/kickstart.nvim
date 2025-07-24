@@ -1,14 +1,14 @@
 -- Neo-tree is a Neovim plugin to browse the file system
 -- https://github.com/nvim-neo-tree/neo-tree.nvim
 return {
-  "nvim-tree/nvim-tree.lua",
-  version = "*",
+  'nvim-tree/nvim-tree.lua',
+  version = '*',
   lazy = false,
   dependencies = {
-    "nvim-tree/nvim-web-devicons",
+    'nvim-tree/nvim-web-devicons',
   },
   config = function()
-    require("nvim-tree").setup {}
-    vim.keymap.set('n','<leader>n',':NvimTreeToggle<CR>')
+    require('nvim-tree').setup {}
+    vim.keymap.set('n', '<leader>n', ':NvimTreeToggle<CR>')
   end,
 }
